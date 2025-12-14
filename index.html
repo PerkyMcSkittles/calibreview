@@ -1,64 +1,131 @@
 <!DOCTYPE html>
-<html>
-<head>.card {
-  max-width: 720px;
-  margin: 2rem auto;
-  padding: 1.5rem 2rem;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  line-height: 1.6;
-}
-
-.card h2 {
-  margin-top: 0;
-  color: #1f3a5f;
-}
-
-.card strong {
-  color: #1f3a5f;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Calibre View</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f6f8fb;
+      color: #1b1f24;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    header {
+      margin: 10px 0 18px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 34px;
+      letter-spacing: -0.02em;
+      color: #0f2d4a;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #5a6672;
+      font-size: 16px;
+    }
+
+    .card {
+      max-width: 720px;
+      margin: 22px 0;
+      padding: 18px 22px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      color: #1f3a5f;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .card strong {
+      color: #1f3a5f;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(0,0,0,0.08);
+      margin: 18px 0;
+    }
+
+    .contact {
+      margin-top: 18px;
+      color: #5a6672;
+      font-size: 14px;
+    }
+
+    a {
+      color: #1f6feb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Calibre View</h1>
-  <p>
-<section class="card">
-  <h2>Dropbox Access & App Status</h2>
+  <div class="wrap">
+    <header>
+      <h1>Calibre View</h1>
+      <p class="subtitle">Support & app information</p>
+    </header>
 
-  <p>
-    <strong>Calibre View</strong> uses the Dropbox API to let you browse and
-    download books from your personal Calibre library stored in Dropbox.
-  </p>
+    <section class="card">
+      <h2>Dropbox Access & App Status</h2>
 
-  <p>
-    At launch, Calibre View operates under Dropbox’s
-    <strong>development status</strong>, which allows up to
-    <strong>500 linked users</strong>. This comfortably supports early releases,
-    TestFlight users, and initial public availability.
-  </p>
+      <p>
+        <strong>Calibre View</strong> uses the Dropbox API to let you browse and
+        download books from your personal Calibre library stored in Dropbox.
+      </p>
 
-  <p>
-    Dropbox requires apps to apply for <strong>production status</strong> once
-    they reach <strong>50 linked users</strong>. At that point, the app must be
-    submitted for review within two weeks. Until approval is granted, no
-    additional users beyond that threshold can link their accounts.
-  </p>
+      <p>
+        At launch, Calibre View operates under Dropbox’s
+        <strong>development status</strong>, which allows up to
+        <strong>500 linked users</strong>. This comfortably supports early releases,
+        TestFlight users, and initial public availability.
+      </p>
 
-  <p>
-    If Calibre View grows quickly, an early review may be requested to ensure
-    uninterrupted access as the app scales.
-  </p>
+      <p>
+        Dropbox requires apps to apply for <strong>production status</strong> once
+        they reach <strong>50 linked users</strong>. At that point, the app must be
+        submitted for review within two weeks. Until approval is granted, no
+        additional users beyond that threshold can link their accounts.
+      </p>
 
-  <p>
-    Calibre View follows Dropbox’s API usage and branding guidelines. The app
-    only accesses files explicitly selected by the user and never modifies,
-    uploads, or shares content without user action.
-  </p>
-</section>
-  </p>
-  <p>
-    Contact: calibreviewapp@gmail.com
-  </p>
+      <p>
+        If Calibre View grows quickly, an early review may be requested to ensure
+        uninterrupted access as the app scales.
+      </p>
+
+      <div class="divider"></div>
+
+      <p>
+        Calibre View follows Dropbox’s API usage and branding guidelines. The app
+        only accesses files explicitly selected by the user and never modifies,
+        uploads, or shares content without user action.
+      </p>
+    </section>
+
+    <p class="contact">
+      Contact: <a href="mailto:calibreviewapp@gmail.com">calibreviewapp@gmail.com</a>
+    </p>
+  </div>
 </body>
 </html>
