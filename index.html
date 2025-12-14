@@ -99,8 +99,8 @@
 </header>
 
 <div class="slideshow">
-  <img id="slide" src="images/4EB30D48-B18B-4C87-B369-C46787B81539.png" alt="App screenshot">
-  <div class="caption" id="caption">Library list (dark mode)</div>
+  <img id="slide" src="" alt="App screenshot">
+  <div class="caption" id="caption"></div>
 </div>
 
 <div class="content">
@@ -192,10 +192,17 @@
   const img = document.getElementById("slide");
   const caption = document.getElementById("caption");
 
+  function showSlide(i) {
+    img.src = slides[i].src;
+    caption.textContent = slides[i].caption;
+  }
+
+  // Initial slide
+  showSlide(index);
+
   setInterval(() => {
     index = (index + 1) % slides.length;
-    img.src = slides[index].src;
-    caption.textContent = slides[index].caption;
+    showSlide(index);
   }, 4000);
 </script>
 
