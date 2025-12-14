@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calibre View — FAQ</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f5f7;
+      color: #1c1c1e;
+    }
+
+    header {
+      padding: 2.5rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 1.5rem auto 3rem;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+      padding: 1.25rem 1.25rem;
+      margin: 1rem 0;
+    }
+
+    details {
+      border-radius: 12px;
+    }
+
+    details + details {
+      margin-top: 0.75rem;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 650;
+      font-size: 1.05rem;
+      list-style: none;
+      outline: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:after {
+      content: "▾";
+      float: right;
+      color: #666;
+    }
+
+    details[open] summary:after {
+      content: "▴";
+    }
+
+    .answer {
+      margin-top: 0.75rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .answer code {
+      background: #f1f2f4;
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+      font-size: 0.95em;
+    }
+
+    .links {
+      margin-top: 1.25rem;
+      text-align: center;
+      color: #777;
+    }
+
+    .links a {
+      color: inherit;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer {
+      margin: 2.25rem 0 2rem;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>FAQ</h1>
+  <p>
+    Quick answers to common questions about Calibre View — setup, privacy, and how it works.
+  </p>
+</header>
+
+<div class="content">
+
+  <div class="card">
+    <details open>
+      <summary>What is Calibre View?</summary>
+      <div class="answer">
+        Calibre View is an iPhone/iPad app for browsing and managing your Calibre ebook library using
+        cloud storage (Dropbox or Google Drive) or files in the Files app.
+      </div>
+    </details>
+
+    <details>
+      <summary>Do I need to run Calibre on a server or keep my computer on?</summary>
+      <div class="answer">
+        No. Calibre View reads your library database file (<code>metadata.db</code>) from your storage.
+        There’s no server required.
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I set up my Calibre library for Calibre View?</summary>
+      <div class="answer">
+        Put your Calibre library folder somewhere Calibre View can access it (Dropbox, Google Drive, or Files),
+        then connect that library in the app. Calibre View uses the Calibre database (<code>metadata.db</code>)
+        to display your books and metadata. 
+      </div>
+    </details>
+
+    <details>
+      <summary>Can I browse my library with only metadata.db?</summary>
+      <div class="answer">
+        Yes. If you upload just <code>metadata.db</code>, you can browse and search the full metadata,
+        but covers and book downloads won’t be available (because the files aren’t there).
+      </div>
+    </details>
+
+    <details>
+      <summary>Does Calibre View upload, edit, or delete my files?</summary>
+      <div class="answer">
+        No. Calibre View is read-only. It does not modify your Calibre library or upload content.
+      </div>
+    </details>
+
+    <details>
+      <summary>Does Calibre View download every cover?</summary>
+      <div class="answer">
+        No. Covers download on demand when you open a book’s detail view. This saves bandwidth and storage.
+      </div>
+    </details>
+
+    <details>
+      <summary>Does Calibre View work offline?</summary>
+      <div class="answer">
+        Once a library is downloaded, you can browse it offline. However, downloading covers or book files
+        requires connectivity.
+      </div>
+    </details>
+
+    <details>
+      <summary>What formats does Calibre View support?</summary>
+      <div class="answer">
+        Calibre View lists whatever formats exist in your Calibre library (for example: EPUB, AZW3, PDF, TXT, etc.)
+        and lets you download and share/open them in other apps.
+      </div>
+    </details>
+
+    <details>
+      <summary>Is Calibre View affiliated with Calibre?</summary>
+      <div class="answer">
+        No. Calibre View is an independent app and is not affiliated with, endorsed by, or sponsored by the Calibre project.
+      </div>
+    </details>
+
+    <details>
+      <summary>What data does Calibre View collect?</summary>
+      <div class="answer">
+        Calibre View does not sell your data. For specifics, please read the Privacy Policy.
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I report a bug or request a feature?</summary>
+      <div class="answer">
+        Email <a href="mailto:calibreviewapp@gmail.com">calibreviewapp@gmail.com</a> with:
+        your device model, iOS/iPadOS version, what you were doing, and (if possible) a screenshot or logs from the settings menu.
+      </div>
+    </details>
+  </div>
+
+  <div class="links">
+    <a href="index.html">Home</a> •
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    Contact: <a href="mailto:calibreviewapp@gmail.com">calibreviewapp@gmail.com</a>
+  </p>
+</footer>
+</body>
+</html>
